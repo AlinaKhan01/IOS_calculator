@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    
+}
+
+#Calculator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    border-radius: 15px;
+    max-width: 400px;
+    overflow: hidden;
+}
+
+#display{
+    width: 100%;
+    padding: 30px;
+    font-size: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: none;
+    background-color: black;
+    color: white;
+    overflow: hidden;          
+    text-overflow: ellipsis;  
+    white-space: nowrap; 
+
+  
+}
+
+button{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    color: white;
+    font-size: 2rem;
+
+    cursor: pointer;
+    background-color: hsl(0, 0%, 20%);
+    border: none;
+  
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+    padding: 25px;
+}
+
+button:hover{
+    background-color: hsl(0,0%,45%);
+}
+
+button:active{
+    background-color: hsl(0,0%,50%);
+}
+
+.grayKey{
+    background-color: hsl(0,0%,65%);
+    color: black;
+}
+
+
+.grayKey:hover{
+    background-color: hsl(0,0%,85%);
+    color: black;
+}
+
+.grayKey:active{
+    background-color: hsl(0,0%,90%);
+    color: black;
+}
+
+.orangeKey{
+    background-color: hsl(36,100%,52%);
+    font-size: 3rem;
+}
+
+.orangeKey:hover{
+    background-color: hsl(31,95%,77%);
+}
+
+.orangeKey:active{
+    background-color: white;
+    color: hsl(36,100%,52%);;
+}
+
+.longKey{
+    width:176px;
+    grid-column-start: 1;
+    grid-column-end:3;
+    text-align: left;
+    text-indent: 17%;
+
+}
+
+.grayKey.clear{
+    width:176px;
+    grid-column-start: 1;
+    grid-column-end:3;
+    
+}
+
+.orangeKey.hi{
+    font-size: 2.5rem;
+}
+
